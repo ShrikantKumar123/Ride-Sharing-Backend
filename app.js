@@ -54,4 +54,6 @@ app.use('/api/v1/payment', checkAccessToken, paymentRouter)
 app.use('/api/v1/paymentwebhook', paymentRouter)
 app.use('/api/v1/feedback', checkAccessToken, ratingRouter)
 
+require("./swagger")(app);
+
 app.listen(process.env.HOST, () => logger.info(`Server running on localhost://${process.env.HOST}`));

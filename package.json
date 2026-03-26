@@ -25,6 +25,8 @@
     "rate-limit-redis": "^4.2.2",
     "rate-limiter-flexible": "^7.3.2",
     "razorpay": "^2.9.6",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
     "winston": "^3.17.0"
   }
 }

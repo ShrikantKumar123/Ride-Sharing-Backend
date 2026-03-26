@@ -72,7 +72,7 @@ const userLogin = async (req, res) => {
 
         if (!user) {
             logger.warn('Sorry we are not found any user, Please sign up!')
-            res.status(400).json({
+            return res.status(400).json({
                 message: 'Sorry we are not found any user, Please sign up!',
                 errorCode: 1
             })
